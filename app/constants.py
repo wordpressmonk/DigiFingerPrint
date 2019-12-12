@@ -1,0 +1,39 @@
+class SmartPixlCons(object):
+    CKEY = 1
+
+
+class SQSConstants(object):
+    EMPTYQUEUEMESSAGE = "EMPTY QUEUE"
+    EMPTYINPUTMESSAGE = "EMPTY RECORD"
+    SQSRETRIEVALLIMIT = 10
+    SQSRETRIEVALVISIBILITY = 600
+
+
+class DataSourceCode(object):
+    SMARTPIXL = 1000
+    EMAILDUMP = 1001
+    DATAFINDER = 1002
+    DATAZAPP = 1003
+    EMAILHYGIENEDUMP = 2000
+    EMAILAPPENDHYGIENEDUMP = 2001
+
+
+class EmailStatus(object):
+    INVALIDEMAILSTATUS = "INVALID"
+    VALIDEMAILSTATUS = "VALID"
+    UNKNOWNEMAILSTATUS = "UNKNOWN"
+    CATCHALL = "CATCH_ALL"
+
+
+class SleepingTime(object):
+    QUEUECHECKERTIME = 600
+    BULKEMAILCHECKERERRORSLEEP = 600
+    SMARTPIXLTRIGGERTIME = 3600
+    EMAIlDUMPEXPIRATION = 180  # days
+
+
+class DataZappConstants(object):
+    APPENDMODULE = "EmailAppend"
+    APPENDTYPE = 3
+    DNCFLAG = "true"
+
